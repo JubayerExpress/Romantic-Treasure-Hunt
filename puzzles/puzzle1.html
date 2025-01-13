@@ -1,1 +1,37 @@
-puzzle1.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puzzle 1 - Romantic Treasure Hunt</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Puzzle 1: Our First Date</h1>
+    <p>What was the name of the restaurant where we had our first dinner date?</p>
+    <input type="text" id="answer" placeholder="Your Answer">
+    <button onclick="checkAnswer()">Submit Answer</button>
+    <p id="feedback"></p>
+  </div>
+
+  <script>
+    function checkAnswer() {
+      const answer = document.getElementById('answer').value.toLowerCase();
+      const feedback = document.getElementById('feedback');
+
+      if (answer === 'sunset grill') {
+        feedback.textContent = 'Correct! On to the next puzzle!';
+        feedback.style.color = 'green';
+        setTimeout(() => {
+          window.location.href = 'puzzle2.html';
+        }, 2000);
+      } else {
+        feedback.textContent = 'Oops, that\'s not correct! Try again.';
+        feedback.style.color = 'red';
+      }
+    }
+  </script>
+</body>
+</html>
+

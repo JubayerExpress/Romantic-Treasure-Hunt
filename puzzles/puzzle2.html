@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puzzle 2 - Romantic Treasure Hunt</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Puzzle 2: A Special Moment</h1>
+    <p>What was the name of the park where we shared our first kiss?</p>
+    <input type="text" id="answer" placeholder="Your Answer">
+    <button onclick="checkAnswer()">Submit Answer</button>
+    <p id="feedback"></p>
+  </div>
+
+  <script>
+    function checkAnswer() {
+      const answer = document.getElementById('answer').value.toLowerCase();
+      const feedback = document.getElementById('feedback');
+
+      if (answer === 'rosewood park') {
+        feedback.textContent = 'Correct! You\'re almost there!';
+        feedback.style.color = 'green';
+        setTimeout(() => {
+          window.location.href = 'final_surprise.html';
+        }, 2000);
+      } else {
+        feedback.textContent = 'Oops, that\'s not correct! Try again.';
+        feedback.style.color = 'red';
+      }
+    }
+  </script>
+</body>
+</html>
 

@@ -1,19 +1,5 @@
 # Romantic Treasure Hunt
-Romantic-Treasure-Hunt/
-│
-├── index.html  // Landing page
-├── style.css   // CSS for styling
-├── script.js   // JavaScript for game logic
-├── puzzles/
-│   ├── puzzle1.html  // First puzzle page
-│   ├── puzzle2.html  // Second puzzle page
-│   └── final_surprise.html  // Final reveal
-├── media/
-│   ├── love_note.png  // Image for a love note surprise
-│   ├── surprise_video.mp4  // Final video surprise
-│   └── audio_message.mp3  // Romantic audio message
-├── README.md
-└── LICENSE
+
 
 
 This is a romantic interactive treasure hunt designed for your loved one. It guides them through a series of puzzles that lead to a final surprise. 
@@ -50,3 +36,22 @@ copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
 ... [Full MIT License text here] ...
+
+
+
+
+Romantic-Treasure-Hunt/
+│
+├── index.html  // Landing page
+├── style.css   // CSS for styling
+├── script.js   // JavaScript for game logic
+├── puzzles/
+│   ├── puzzle1.html  // First puzzle page
+│   ├── puzzle2.html  // Second puzzle page
+│   └── final_surprise.html  // Final reveal
+├── media/
+│   ├── love_note.png  // Image for a love note surprise
+│   ├── surprise_video.mp4  // Final video surprise
+│   └── audio_message.mp3  // Romantic audio message
+├── README.md
+└── LICENSE

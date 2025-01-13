@@ -8,8 +8,8 @@
 </head>
 <body>
   <div class="container">
-    <h1>Puzzle 1: Our First Date</h1>
-    <p>What was the name of the restaurant where we had our first dinner date?</p>
+    <h1>Puzzle 1: Our First Meet</h1>
+    <p>What was the name of the place where we met first?</p>
     <input type="text" id="answer" placeholder="Your Answer">
     <button onclick="checkAnswer()">Submit Answer</button>
     <p id="feedback"></p>
@@ -20,7 +20,7 @@
       const answer = document.getElementById('answer').value.toLowerCase();
       const feedback = document.getElementById('feedback');
 
-      if (answer === 'sunset grill') {
+      if (answer === 'rumc') {
         feedback.textContent = 'Correct! On to the next puzzle!';
         feedback.style.color = 'green';
         setTimeout(() => {
